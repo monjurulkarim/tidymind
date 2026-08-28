@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TidyMind Support</title>
+  <meta name="description" content="TidyMind support: FAQ, contact, and help for the on-device AI file organizer for Mac.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗂️</text></svg>">
+  <style>
+    :root {
+      --ink: #0f172a; --body: #334155; --muted: #64748b;
+      --accent: #4f46e5; --bg: #ffffff; --soft: #f1f5f9; --border: #e2e8f0;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--body); background: var(--bg); line-height: 1.65; -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header { background: linear-gradient(160deg, #0f172a 0%, #1e1b4b 100%); color: #e0e7ff; padding: 56px 0 48px; }
+    header .emoji { font-size: 40px; display: block; margin-bottom: 12px; }
+    h1 { color: #fff; font-size: clamp(28px, 4vw, 38px); letter-spacing: -0.02em; font-weight: 800; }
+    header p { margin-top: 10px; color: #c7d2fe; }
+    main { padding: 48px 0 32px; }
+    h2 { color: var(--ink); font-size: 20px; margin: 34px 0 12px; }
+    h2:first-child { margin-top: 0; }
+    .contact {
+      background: var(--soft); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 20px 22px; margin-bottom: 8px;
+    }
+    .contact a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .contact a:hover { text-decoration: underline; }
+    details {
+      border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 16px 20px; margin-bottom: 12px; background: #fff;
+    }
+    details summary { cursor: pointer; color: var(--ink); font-weight: 600; font-size: 16px; }
+    details p { margin-top: 10px; font-size: 15px; }
+    details a { color: var(--accent); }
+    footer { padding: 32px 0 48px; color: var(--muted); font-size: 14px; }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="emoji">🗂️</span>
+    <h1>TidyMind Support</h1>
+    <p>Questions, answers, and a human at the other end.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h2>Contact</h2>
+    <div class="contact">
+      Email <a href="mailto:raju.monjurulkarim@gmail.com">raju.monjurulkarim@gmail.com</a> — I read everything and usually reply within a day or two.
+    </div>
+
+    <h2>Frequently asked</h2>
+
+    <details open>
+      <summary>Where do the AI models come from, and do they need the internet?</summary>
+      <p>Models (roughly 1–5 GB) download <strong>once</strong> from Hugging Face into the app container. After that, everything runs locally on your Mac — organizing, reading documents, and renaming never touch the network.</p>
+    </details>
+
+    <details>
+      <summary>I changed my mind after applying a plan. Can I undo it?</summary>
+      <p>Yes. Every organize and rename run is undoable: open <strong>History → Undo</strong> next to the session and your files return exactly where they were, including nested folder structure.</p>
+    </details>
+
+    <details>
+      <summary>What does Pro unlock, and how do I manage or cancel it?</summary>
+      <p>Scanning, AI analysis, and full plan review are free forever. Pro unlocks the payoff actions: applying organize plans, applying renames, saving &amp; re-applying Schemes, and removing duplicates. It's available as an annual subscription or a one-time Lifetime purchase — manage or cancel anytime through your <a href="https://apps.apple.com/account/subscriptions">App Store account</a>.</p>
+    </details>
+
+    <details>
+      <summary>Which Macs are supported?</summary>
+      <p>TidyMind requires macOS 15 or later on Apple Silicon (M-series) — the on-device MLX engine runs on the GPU/Neural Engine stack those Macs provide.</p>
+    </details>
+
+    <details>
+      <summary>How do refunds work?</summary>
+      <p>Purchases are processed by Apple, so refunds are handled by Apple as well — visit <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> with the Apple ID you used.</p>
+    </details>
+
+    <details>
+      <summary>Is my data really staying on my device?</summary>
+      <p>Yes — see the <a href="/tidymind/privacy/">Privacy Policy</a>. No analytics, no accounts, no servers. The only network use is the one-time model download and Apple's own StoreKit for purchases.</p>
+    </details>
+
+    <footer>
+      <a href="/tidymind/">← TidyMind home</a> · <a href="/tidymind/privacy/">Privacy Policy</a><br><br>
+      © 2026 Muhammad Karim
+    </footer>
+  </div>
+</main>
+
+</body>
+</html>
