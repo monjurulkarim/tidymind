@@ -63,6 +63,11 @@
     .plan .price { color: var(--ink); font-size: 30px; font-weight: 800; margin: 8px 0 2px; }
     .plan .per { color: var(--muted); font-size: 13.5px; margin-bottom: 14px; }
     .plan p { font-size: 14.5px; }
+    /* Demo media */
+    video.demo { width: 100%; height: auto; display: block; background: #000; border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 28px; }
+    .grid.shots figure { margin: 0; }
+    .grid.shots img { width: 100%; height: auto; display: block; border: 1px solid var(--border); border-radius: var(--radius); }
+    .grid.shots figcaption { margin-top: 8px; font-size: 14px; color: var(--muted); text-align: center; }
     /* Footer */
     footer { padding: 40px 0 56px; color: var(--muted); font-size: 14px; }
     footer a { color: var(--accent); text-decoration: none; }
@@ -82,6 +87,30 @@
     <p class="fineprint">Free to try — pay only when you're ready to apply changes.</p>
   </div>
 </div>
+
+<section>
+  <div class="wrap">
+    <h2>See it in action</h2>
+    <p class="lede">A short walkthrough: reviewing an organization plan, the AI Renamer, and the duplicate finder.</p>
+    <video class="demo" controls autoplay muted loop playsinline preload="metadata" poster="/tidymind/assets/img/tidymind-plan.jpg">
+      <source src="/tidymind/assets/video/tidymind-preview.mp4" type="video/mp4">
+    </video>
+    <div class="grid shots">
+      <figure>
+        <img src="/tidymind/assets/img/tidymind-plan.jpg" alt="TidyMind plan review screen with files grouped into proposed folders" loading="lazy">
+        <figcaption>Review the plan</figcaption>
+      </figure>
+      <figure>
+        <img src="/tidymind/assets/img/tidymind-renamer.jpg" alt="TidyMind AI Renamer screen with renamed files in Finder" loading="lazy">
+        <figcaption>AI Renamer</figcaption>
+      </figure>
+      <figure>
+        <img src="/tidymind/assets/img/tidymind-duplicates.jpg" alt="TidyMind duplicate finder screen listing duplicate groups" loading="lazy">
+        <figcaption>Duplicate finder</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
 <section>
   <div class="wrap">
